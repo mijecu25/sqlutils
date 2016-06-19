@@ -1,8 +1,8 @@
 # sqlutils
 
-[![Build Status](https://travis-ci.org/mijecu25/sqlplus.svg?branch=sqlplus)](https://travis-ci.org/mijecu25/sqlutils)
-[![Coverage Status](https://coveralls.io/repos/github/mijecu25/sqlutils/badge.svg?branch=sqlplus)](https://coveralls.io/github/mijecu25/sqlutils?branch=sqlplus)
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mijecu25/sqlutils/sqlplus/LICENSE)
+[![Build Status](https://travis-ci.org/mijecu25/sqlplus.svg?branch=master)](https://travis-ci.org/mijecu25/sqlutils)
+[![Coverage Status](https://coveralls.io/repos/github/mijecu25/sqlutils/badge.svg?branch=master)](https://coveralls.io/github/mijecu25/sqlutils?branch=master)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mijecu25/sqlutils/master/LICENSE)
     
 ## License
 
