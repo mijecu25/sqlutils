@@ -23,7 +23,6 @@ public abstract class SQLUtils {
     private static String getDatabaseSystem(Connection connection) {
         // TODO might need to throw sqle exception to calling method
         try {
-            // Get the name of the database system used by the connection
             String database = connection.getMetaData().getDatabaseProductName();
 
             if(database == null) {
@@ -48,19 +47,15 @@ public abstract class SQLUtils {
      * @throws SQLException if there is an error when executing the query.
      */
     public static int maxDatabaseNameLength(Connection connection) throws SQLException {
-        // If the connection is null
         if(connection == null) {
             // TODO
         }
 
-        // Get the database system
         String database = SQLUtils.getDatabaseSystem(connection);
 
-        // Get the length
         int length = 0;
 
         switch(database) {
-            // MySQL
             default:
                 length = MySQLUtils.maxDatabaseNameLength(connection);
                 break;
@@ -79,19 +74,15 @@ public abstract class SQLUtils {
      * @throws SQLException if there is an error when executing the query.
      */
     public static String selectDatabase(Connection connection) throws SQLException {
-        // If the connection is null
         if(connection == null) {
             // TODO
         }
 
-        // Get the database system
         String database = SQLUtils.getDatabaseSystem(connection);
 
-        // Get the name of the database
         String currentDatabase = null;
 
         switch(database) {
-            // MySQL
             default:
                 currentDatabase = MySQLUtils.selectDatabase(connection);
                 break;
@@ -111,19 +102,15 @@ public abstract class SQLUtils {
      * @throws SQLException if there is an error when executing the query.
      */
     public static int maxTableNameLength(Connection connection, String database) throws SQLException {
-        // If the connection is null
         if(connection == null) {
             // TODO
         }
 
-        // Get the database system
         String databaseSystem = SQLUtils.getDatabaseSystem(connection);
 
-        // Get the length
         int length = 0;
 
         switch(databaseSystem) {
-            // MySQL
             default:
                 length = MySQLUtils.maxTableNameLength(connection, database);
                 break;
